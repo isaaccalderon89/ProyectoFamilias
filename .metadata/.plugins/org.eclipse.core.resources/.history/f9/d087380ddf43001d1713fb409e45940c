@@ -1,0 +1,15 @@
+import modelo.beans.Familia;
+import modelo.daos.FamiliaListImpl;
+import modelo.daos.IntFamilia;
+
+public class TestFamiliaDao {
+
+	public static void main(String[] args) {
+		IntFamilia ifam = new FamiliaListImpl();
+		
+		for(Familia ele: ifam.findAll())
+			System.out.println(ele);
+
+	}
+
+}
